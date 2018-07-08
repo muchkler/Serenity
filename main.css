@@ -23,14 +23,14 @@ nav li {
 
 .container{
     margin: 0 auto;
-    width: 50%; 
+    width: 60%; 
     text-align: center; 
 }
 
 h1{
     padding-top: 350px;
     font-size: 50px;
-    color: white; 
+    color: white;
 }
 
 p{
@@ -98,13 +98,26 @@ h2{
 
 @media only screen and (max-width: 574px){
     
-    nav{
-        padding-right: 5px;
+    
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-left: 20px;
+    }
+    
+    h1{
+    padding-top: 0px;     
+                    
     }
     
     h2{
-        padding-top: 140px;
+        padding-top: 5px;
     }
     
+    .logotxt{
+        margin: 0 auto;
+        width: 0%;
+        float: none; 
+    }
     
 }
