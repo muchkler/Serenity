@@ -223,3 +223,22 @@ a{
     }
     
 }
+
+
+@media only screen and (max-width: 667px){
+    h3{
+      padding-top: 80px;  
+    }
+    
+    .yosemite{
+        font-size: 12px;
+    }
+    .exploreyosemite{
+        padding-top: 100px;
+    }
+    
+    .fuji{
+        font-size: 13px;
+        padding-top: 0px;
+    }
+}
