@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+    <link rel="icon" href="apple-icon.png" />
+    <title> Explore Our Home </title>
+</head>
+
+<body>
+    
+
+<div class="header">
+<div class="navbar">    
+<nav> 
+    <ul>
+        <h1 class="serenity">Serenity</h1>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#firstpage">Destinations</a></li>
+        <li>Earth</li>
+    </ul>
+</nav>
+</div>
+    
+<div class="container">
+    <h2> Explore our beautiful<br>Earth.</h2>
+    <p class="yosemitep">Too focused on our phones, we often forget how beautiful Earth is. <br>Not everyone is equipped with the financials to travel. Explore Earth right here.</p>
+    <h3> Explore now.</h3>
+    <div class="explore"><a href="#firstpage"><img src="images/arrow.png" width="30px"></a></div>
+</div>    
+</div>   
+    
+<!--Destinations-->
+    
+<div class="firstpage" id="firstpage">
+    <div class="firstelements">
+        <h4>Yosemite</h4>
+        <p class="yosemite">Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra. First protected in 1864, Yosemite National Park is best known for its waterfalls, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, ancient giant sequoias, a vast wilderness area, and much more.</p>
+        <div class="yosemitebtn"><a href="https://www.nps.gov/yose/index.htm">Learn more</a></div>
+        <div class="exploreyosemite"><a href="#secondpage"><img src="images/arrow.png" width="30px"></a></div>
+    </div>
+</div>
+    
+<div class="secondpage" id="secondpage">
+    <div class="secondelements">
+        <h4>Mount Fuji</h4>
+        <p class="fuji">An almost perfectly symmetrical volcanic cone, the mountain is a near-mythical national symbol immortalized in countless works of art, including Hokusai's 36 Views of Mt. Fuji. The Japanese always refer to Mt. Fuji as Fuji-san, but the -san (山) here simply means "mountain", and has nothing to do with the honorific san (さん) for people's names. "Fujiyama" is a misreading of the name, and is never used by the Japanese themselves — except in the set phrase Fujiyama geisha.</p>
+        <div class="fujibtn"><a href="https://wikitravel.org/en/Mount_Fuji">Learn more</a></div>
+        <div class="explorefuji"><a href="#thirdpage"><img src="images/arrow.png" width="30px"></a></div>
+    </div>
+</div>    
+    
+<div class="thirdpage" id="thirdpage">
+    <div class="thirdelements">
+        <h4>Lamon, Italy</h4>
+        <p class="italy">Lamon is a comune (municipality) in the province of Belluno in the Italian region of Veneto, located about 80 kilometres (50 mi) northwest of Venice and about 35 kilometres (22 mi) west of Belluno. As of 31 December 2004, it had a population of 3,322 and an area of 54.3 square kilometres (21.0 sq mi)</p>
+        <div class="italybtn"><a href="https://wikitravel.org/en/Mount_Fuji">Learn more</a></div>
+        <div class="exploreitaly"><a href="#earth"><img src="images/arrow.png" width="30px"></a></div>
+    </div>
+</div>    
+    
+<!--Destinations-->
+ 
+    
+<div class="earth" id="earth">
+    <div class="earthelements">
+        <h4 class="earthheader">Earth's unending beauty.</h4>
+        <h5>Our home, despite our differences.</h5>
+        <p class="earthp">As humans, we are always awed the beauty of Earth no matter what circumstances we are going through. We hope to have you placed you in a state of awe, if even for a few minutes. We hope you have a good day!</p>
+    </div>
+</div>    
+    
+    
+<!-- Javascript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<!-- Javascript -->
+    
+</body>
+</html>
